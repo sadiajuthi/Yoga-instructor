@@ -2,7 +2,7 @@ import React from 'react';
 import img from '../image/banner.jpg'
 import './Home.css'
 import useServices from '../hooks/useService'
-import Footer from '../Footer/Footer'
+
 
 
 
@@ -42,7 +42,7 @@ const Home = () => {
                 </div>
 
             </section>
-            <Footer></Footer>
+
 
         </div>
     );

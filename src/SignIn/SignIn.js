@@ -48,7 +48,7 @@ const SignIn = () => {
                     <button className='btn btn-success w-100 py-2 mt-4 mb-1 fw-bold'>Sign In</button>
                 </form>
 
-                <p className='ms-4'>New to Relaxia? <Link to='/signup' className='text-danger pe-auto text-decoration-none' onClick={navigateSignUp}>Please Sign up.</Link></p>
+                <p className='ms-4 text-light'>New to Relaxia? <Link to='/signup' className='text-danger pe-auto text-decoration-none' onClick={navigateSignUp}>Please Sign up.</Link></p>
 
                 <div>
                     <h6 className='text-center text-light'>or</h6>

@@ -8,10 +8,11 @@ import About from './About/About'
 import SignIn from './SignIn/SignIn'
 import SignUp from './SignUp/SignUp'
 import NotFound from './NotFound/NotFound';
+import Footer from './Footer/Footer'
 
 function App() {
   return (
-    <div className="text-center">
+    <div>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -24,6 +25,7 @@ function App() {
 
 
       </Routes>
+      <Footer></Footer>
 
     </div>
   );

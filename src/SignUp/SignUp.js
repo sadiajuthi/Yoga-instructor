@@ -82,7 +82,7 @@ const SignUp = () => {
                             <input className='btn btn-success w-100 py-2 mt-4 fw-bold' type="submit" value="signup" />
                         </div>
                     </form>
-                    <p className='test-start ms-4'>Already have a account? <Link to='/signin' className='text-danger pe-auto text-decoration-none' onClick={navigateSignIn}>Please Sign In.</Link></p>
+                    <p className='test-start ms-4 text-light'>Already have a account? <Link to='/signin' className='text-danger pe-auto text-decoration-none' onClick={navigateSignIn}>Please Sign In.</Link></p>
 
                     <div>
                         <h6 className='text-center text-light'>or</h6>
