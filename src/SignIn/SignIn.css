@@ -1,0 +1,12 @@
+.form {
+    background-color: rgb(99, 200, 99);
+    border-radius: 15px;
+}
+
+form label {
+    color: white;
+}
+
+form input {
+    height: 45px;
+}

@@ -1,0 +1,22 @@
+.banner {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    color: rgb(240, 245, 245);
+    text-align: start;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 560px) {
+    .title {
+        position: absolute;
+        left: 30px;
+        top: 120px;
+        font-size: 15px;
+    }
+}

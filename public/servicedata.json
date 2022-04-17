@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Hatha yoga",
+        "img": "https://as1.ftcdn.net/v2/jpg/01/29/57/42/1000_F_129574215_CC5D9UWdEkF0Py1HLW5IWYeZnJjDbqPd.jpg",
+        "price": "130",
+        "description": " The Sanskrit term 'hatha' is an umbrella term for all physical postures of yoga. hatha yoga simply refers to all the other styles of yoga,that are grounded in a physical practice."
+    },
+    {
+        "id": 2,
+        "name": "Kundalini yoga",
+        "img": "https://img.freepik.com/free-photo/woman-sitting-yoga-pose-beach_1098-1454.jpg?t=st=1650141558~exp=1650142158~hmac=1fb97baf2c107913c1a1cd088f9dc30876aa1fff2b678ef90e3c00a42a80e1d9&w=740",
+        "price": "100",
+        "description": "Kundalini yoga practice is equal parts spiritual and physical. This style is all about releasing the kundalini energy or coiled, in the lower spine."
+    },
+    {
+        "id": 3,
+        "name": "Ashtanga yoga",
+        "img": "https://img.freepik.com/free-photo/young-man-is-making-yoga-isolated-white-background_231208-8177.jpg?t=st=1650143812~exp=1650144412~hmac=780cae902a83c663f7a8fc43afa4a0152c5514d441ed868620c6fa2c1bb2a763&w=740",
+        "price": "120",
+        "description": "In Sanskrit, ashtanga is translated as 'Eight Limb path.' In Mysore, India, people gather to practice this form of yoga together at their own pace."
+    }
+]
