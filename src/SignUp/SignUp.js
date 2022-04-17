@@ -2,6 +2,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init'
+import SocialSignin from '../SocialSigin/SocialSignin';
 // import { createUserWithEmailAndPassword } from "firebase/auth"
 
 
@@ -87,9 +88,7 @@ const SignUp = () => {
                         <h6 className='text-center text-light'>or</h6>
                     </div>
 
-                    <div className='mx-auto px-4'>
-                        <button className='btn btn-success w-100 py-2  fw-bold'>Sign In With Google</button>
-                    </div>
+                    <SocialSignin></SocialSignin>
                 </div>
             </div>
         </div>

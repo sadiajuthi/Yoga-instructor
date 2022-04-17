@@ -1,8 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../firebase.init';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    };
+
     return (
 
         <div className='sticky-top'>
@@ -21,8 +30,14 @@ const Header = () => {
                                 <Nav.Link as={Link} to='/about'>About Me</Nav.Link>
                             </Nav>
                             <Nav>
-                                <Nav.Link as={Link} to='/signin'><button className='btn btn-success'>Sign In</button></Nav.Link>
-                                <Nav.Link as={Link} to='/signup'><button className='btn btn-success'>Sign Up</button></Nav.Link>
+                                {
+                                    user ?
+                                        <Nav.Link as={Link} to='/signin' onClick={handleSignOut}><button className='btn btn-success'>Sign Out</button></Nav.Link>
+                                        :
+                                        <Nav.Link as={Link} to='/signin'><button className='btn btn-success'>Sign In</button></Nav.Link>
+                                }
+
+                                {/* <Nav.Link as={Link} to='/signup'><button className='btn btn-success'>Sign Up</button></Nav.Link> */}
 
                             </Nav>
                         </Navbar.Collapse>

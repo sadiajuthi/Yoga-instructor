@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
+import SocialSignin from '../SocialSigin/SocialSignin';
 import './SignIn.css'
 
 const SignIn = () => {
@@ -52,8 +53,7 @@ const SignIn = () => {
                 <div>
                     <h6 className='text-center text-light'>or</h6>
                 </div>
-
-                <button className='btn btn-success w-100 py-2  fw-bold mx-4'>Sign In With Google</button>
+                <SocialSignin></SocialSignin>
             </div>
         </div>
     );
