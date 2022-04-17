@@ -1,18 +1,60 @@
-import React, { useRef } from 'react';
+
 import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init'
+// import { createUserWithEmailAndPassword } from "firebase/auth"
+
 
 const SignUp = () => {
-    const emailRef = useRef('');
-    const passwordRef = useRef('');
+
+    const [
+        createUserWithEmailAndPassword,
+        // user,
+        // loading,
+        // error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+
     const navigate = useNavigate();
 
-    const handleSignUp = event => {
-        event.preventDefault();
-    }
-
-    const navigateSignIn = event => {
+    const navigateSignIn = () => {
         navigate('/signin')
     }
+
+    // if (user) {
+    //     navigate('/home')
+    // }
+
+
+
+    // const handleSignUp = event => {
+    //     const email = event.target.email.value
+    //     const password = event.target.password.value;
+    //     createUserWithEmailAndPassword( auth,email, password)
+    //     .then(result => {
+    //         const user = result.user;
+    //         console.log(user);
+    //     })
+    //     .catch(error => {
+    //         console.error(error);
+    //     })
+
+    //     console.log('submitted', email, password);
+    //     event.preventDefault();
+
+    // }
+    const handleSignUp = async (event) => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        // const agree = event.target.terms.checked;
+
+        await createUserWithEmailAndPassword(email, password);
+        // await updateProfile({ displayName: name });
+        // console.log('Updated profile');
+        navigate('/home');
+    }
+
 
 
 
@@ -23,16 +65,21 @@ const SignUp = () => {
                 <h2 className=' text-light'>Sign Up Now</h2>
                 <div className='text-start'>
                     <form onSubmit={handleSignUp} className='text-start m-4'>
-
+                        <div className="d-flex flex-column my-2">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" name='name' placeholder='Eter your Name' id="" />
+                        </div>
                         <div className="d-flex flex-column my-2">
                             <label htmlFor="email">Email</label>
-                            <input ref={emailRef} type="text" placeholder='Enter your email' required />
+                            <input type="text" name='email' placeholder='Enter your email' required />
                         </div>
                         <div className="d-flex flex-column my-">
                             <label htmlFor="password">Password</label>
-                            <input ref={passwordRef} type="password" placeholder='Enter your password' required />
+                            <input type="password" name='password' placeholder='Enter your password' required />
                         </div>
-                        <button className='btn btn-success w-100 py-2 mt-4 fw-bold'>Sign Up</button>
+                        <div >
+                            <input className='btn btn-success w-100 py-2 mt-4 fw-bold' type="submit" value="signup" />
+                        </div>
                     </form>
                     <p className='test-start ms-4'>Already have a account? <Link to='/signin' className='text-danger pe-auto text-decoration-none' onClick={navigateSignIn}>Please Sign In.</Link></p>
 
