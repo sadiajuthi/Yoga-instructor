@@ -3,10 +3,12 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
 import SocialSignin from '../SocialSigin/SocialSignin';
 import './SignIn.css'
+import { sendPasswordResetEmail } from 'firebase/auth';
+import Loading from '../Loading/Loding';
 
 const SignIn = () => {
     const emailRef = useRef('');
@@ -17,11 +19,18 @@ const SignIn = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
 
     const navigate = useNavigate();
+    const loacation = useLocation();
+    const from = loacation.state?.from?.pathname || '/home';
+
+
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true })
+    }
+    if (loading) {
+        <Loading></Loading>
     }
 
     let errorElement;
@@ -33,8 +42,8 @@ const SignIn = () => {
 
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        signInWithEmailAndPassword(email, password)
         event.preventDefault();
+        signInWithEmailAndPassword(email, password)
         console.log(email, password);
 
     }
@@ -46,7 +55,7 @@ const SignIn = () => {
     const resetPassword = async () => {
         const email = emailRef.current.value;
         if (email) {
-            await sendPasswordResetEmail(email);
+            await sendPasswordResetEmail(auth, email);
             toast('Sent email');
         }
         else {
@@ -77,6 +86,7 @@ const SignIn = () => {
                 <p className='ms-4 text-light'>New to Relaxia? <Link to='/signup' className='text-danger ms-2 pe-auto text-decoration-none' onClick={navigateSignUp}>Please Sign up.</Link></p>
 
                 <p className='ms-4 text-light'>Forget Password? <button className='text-danger btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+                <ToastContainer />
 
                 <div>
                     <h6 className='text-center text-light'>or</h6>

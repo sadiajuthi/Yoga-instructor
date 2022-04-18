@@ -1,8 +1,9 @@
 
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init'
 import SocialSignin from '../SocialSigin/SocialSignin';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 // import { createUserWithEmailAndPassword } from "firebase/auth"
 
 
@@ -14,6 +15,7 @@ const SignUp = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
