@@ -30,7 +30,7 @@ const SignIn = () => {
         navigate(from, { replace: true })
     }
     if (loading) {
-        <Loading></Loading>
+        return <Loading></Loading>
     }
 
     let errorElement;

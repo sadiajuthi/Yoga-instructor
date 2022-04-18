@@ -2,37 +2,37 @@
     {
         "id": 1,
         "name": "Hatha yoga",
-        "img": "https://as1.ftcdn.net/v2/jpg/01/29/57/42/1000_F_129574215_CC5D9UWdEkF0Py1HLW5IWYeZnJjDbqPd.jpg",
-        "description": " The Sanskrit term 'hatha' is an umbrella term for all physical postures of yoga. hatha yoga simply refers to all the other styles of yoga,that are grounded in a physical practice."
+        "img": "https://img.freepik.com/free-photo/concentrated-woman-meditating-nature_1098-1412.jpg?t=st=1650292509~exp=1650293109~hmac=6e772245d59358558730ceb5ccacb6780b70e20ab2072d9c2cf6b2b05010f0ec&w=740",
+        "description": " Hatha is a general category that includes most yoga styles. It is an old system that includes the practice of  pranayama , which help bring peace to the mind and body, preparing the body for deeper spiritual practices such as meditation."
     },
     {
         "id": 2,
         "name": "Kundalini yoga",
-        "img": "https://img.freepik.com/free-photo/woman-sitting-yoga-pose-beach_1098-1454.jpg?t=st=1650141558~exp=1650142158~hmac=1fb97baf2c107913c1a1cd088f9dc30876aa1fff2b678ef90e3c00a42a80e1d9&w=740",
-        "description": "Kundalini yoga practice is equal parts spiritual and physical. This style is all about releasing the kundalini energy or coiled, in the lower spine."
+        "img": "https://img.freepik.com/free-photo/fashionable-young-female-with-grayish-hair-sitting-gomukhasana-cow-pose-while-practicing-hatha-yoga-bedroom-after-awakening-keeping-eyes-closed-pressing-hands-together-namaste_343059-2110.jpg?t=st=1650292509~exp=1650293109~hmac=a372adcfd4835d24b5e7e3a6162acdeecf08f326ee96ffd9f58fbfd0182e43a1&w=740",
+        "description": "Kundalini incorporates repeated movements or exercises, dynamic breathing techniques, chanting, meditation and mantras. Each specific kundalini exercise, referred to as a kriya, is a movement that is often repeated and is synchronized with the breath."
     },
     {
         "id": 3,
-        "name": "Kundalini yoga",
-        "img": "https://img.freepik.com/free-photo/woman-sitting-yoga-pose-beach_1098-1454.jpg?t=st=1650141558~exp=1650142158~hmac=1fb97baf2c107913c1a1cd088f9dc30876aa1fff2b678ef90e3c00a42a80e1d9&w=740",
-        "description": "Kundalini yoga practice is equal parts spiritual and physical. This style is all about releasing the kundalini energy or coiled, in the lower spine."
+        "name": "Vinyasa Yoga",
+        "img": "https://img.freepik.com/free-photo/young-woman-doing-half-lotus-toe-balance-exercise_1163-5069.jpg?t=st=1650292298~exp=1650292898~hmac=7ae3575e0b9d76e5422773688ff72a45700f986b0366b25420a9819bd918f843&w=740",
+        "description": "Like hatha, vinyasa yoga is a general term that describes many different styles of yoga. It essentially means movement synchronized with breath and is a vigorous style based on a rapid flow through sun salutations."
     },
     {
         "id": 4,
-        "name": "Kundalini yoga",
-        "img": "https://img.freepik.com/free-photo/woman-sitting-yoga-pose-beach_1098-1454.jpg?t=st=1650141558~exp=1650142158~hmac=1fb97baf2c107913c1a1cd088f9dc30876aa1fff2b678ef90e3c00a42a80e1d9&w=740",
+        "name": "Power Yoga",
+        "img": "https://img.freepik.com/free-photo/sporty-young-woman-taking-yoga-lessons-online-practices-home_155003-12477.jpg?t=st=1650292381~exp=1650292981~hmac=dc07d13de9024c260745cae4aa568e1be30d5cd16f1620001af83f49de2b02e6&w=740",
         "description": "Kundalini yoga practice is equal parts spiritual and physical. This style is all about releasing the kundalini energy or coiled, in the lower spine."
     },
     {
         "id": 6,
-        "name": "Kundalini yoga",
-        "img": "https://img.freepik.com/free-photo/woman-sitting-yoga-pose-beach_1098-1454.jpg?t=st=1650141558~exp=1650142158~hmac=1fb97baf2c107913c1a1cd088f9dc30876aa1fff2b678ef90e3c00a42a80e1d9&w=740",
+        "name": "Jivamukti Yoga",
+        "img": "https://img.freepik.com/free-photo/young-woman-practicing-yoga-nature_28668-201.jpg?w=740",
         "description": "Kundalini yoga practice is equal parts spiritual and physical. This style is all about releasing the kundalini energy or coiled, in the lower spine."
     },
     {
         "id": 7,
         "name": "Ashtanga yoga",
-        "img": "https://img.freepik.com/free-photo/young-man-is-making-yoga-isolated-white-background_231208-8177.jpg?t=st=1650143812~exp=1650144412~hmac=780cae902a83c663f7a8fc43afa4a0152c5514d441ed868620c6fa2c1bb2a763&w=740",
+        "img": "https://img.freepik.com/free-photo/young-woman-doing-natarajasana-exercise_1163-5070.jpg?t=st=1650292509~exp=1650293109~hmac=d004a0c3ec511bb674decad380bb7b4cc792e596631df70bc2431fa356b11377&w=740",
         "description": "In Sanskrit, ashtanga is translated as 'Eight Limb path.' In Mysore, India, people gather to practice this form of yoga together at their own pace."
     }
 ]

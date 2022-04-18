@@ -17,7 +17,7 @@ const Services = () => {
                 {
                     services.map(service =>
                         <div className='col-md-4 col-sm-12 p-2'>
-                            <div className="card service-card p-3 text-start my-2">
+                            <div className="card s-card p-3 text-start my-2">
                                 <div className='d-flex'>
                                     <img className='img-fulid rounded w-50' src={service.img} alt="" />
                                     <div className='p-3'>

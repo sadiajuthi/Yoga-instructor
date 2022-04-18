@@ -1,15 +1,26 @@
 import React from 'react';
-import { Form } from 'react-bootstrap';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import img from '../image/6667718.jpg'
+
 import './CheckOut.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+
 
 const CheckOut = () => {
 
+    const navigate = useNavigate();
+
+
     const handleProceed = () => {
         toast('order successful')
+        navigate('/')
+
     }
+
+
     return (
         <div className='container mt-5 text-center'>
             <h3>Please check out to confirm your order!!!</h3>
