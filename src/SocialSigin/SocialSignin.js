@@ -8,9 +8,7 @@ const SocialSignin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     let errorElement;
     if (error) {
-        errorElement = <div className='text-danger'>
-            <p>Error: {error.message}</p>
-        </div>
+        errorElement = <p className='text-danger'>Error: {error.message}</p>
     }
     if (user) {
         navigate('/home')

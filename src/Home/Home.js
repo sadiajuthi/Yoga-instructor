@@ -2,6 +2,7 @@ import React from 'react';
 import img from '../image/banner.jpg'
 import './Home.css'
 import useServices from '../hooks/useService'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -9,6 +10,10 @@ import useServices from '../hooks/useService'
 
 const Home = () => {
     const [services, setServices] = useServices()
+    const navigate = useNavigate();
+    const handlecheckout = () => {
+        navigate('/checkout')
+    }
 
     return (
         <div>
@@ -30,7 +35,7 @@ const Home = () => {
                                             <h4>{service.name}</h4>
                                             <h5>Price: ${service.price}</h5>
                                             <p>{service.description}</p>
-                                            <button className='btn btn-lg btn-success'>Order Now</button>
+                                            <button onClick={handlecheckout} className='btn btn-lg btn-success'>Order Now</button>
                                         </div>
                                     </div>
                                 </div>

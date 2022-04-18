@@ -37,7 +37,7 @@ const Header = () => {
                                         <Nav.Link as={Link} to='/signin'><button className='btn btn-success'>Sign In</button></Nav.Link>
                                 }
 
-                                {/* <Nav.Link as={Link} to='/signup'><button className='btn btn-success'>Sign Up</button></Nav.Link> */}
+                                <Nav.Link as={Link} to='/signup'><button className='btn btn-success'>Sign Up</button></Nav.Link>
 
                             </Nav>
                         </Navbar.Collapse>
