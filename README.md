@@ -1,3 +1,14 @@
+# Project Name: Relaxia (Yoga Trainer)
+# Live site: https://yoga-instractor.web.app/
+
+# About project:
+* used React Router
+* used React Bootstrap
+* added firebase hooks
+* connenced with firebase authentication
+* deployed by Firebase Hosting
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
