@@ -12,12 +12,12 @@ const Services = () => {
 
     return (
         <div>
-            <h1 id='service' className='text-success text-center mt-5 pt-5 mb-3'>Services That You Can Choose</h1>
+            <h1 id='service' className='text-success text-center mt-5 pt-5 mb-3'>Services That You Can Choose!</h1>
             <div className='row mb-5'>
                 {
                     services.map(service =>
                         <div className='col-md-4 col-sm-12 p-2'>
-                            <div className="card s-card p-3 text-start my-2">
+                            <div id='s-card' className="card p-3 text-start my-2">
                                 <div className='d-flex'>
                                     <img className='img-fulid rounded w-50' src={service.img} alt="" />
                                     <div className='p-3'>

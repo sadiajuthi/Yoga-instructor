@@ -4,8 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import img from '../image/6667718.jpg'
 
-import './CheckOut.css'
-import { useAuthState } from 'react-firebase-hooks/auth';
+import './CheckOut.css';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -29,7 +28,7 @@ const CheckOut = () => {
                     <img className='w-100 mt-2' src={img} alt="" />
                 </div>
                 <div className="col-md-6 p-5">
-                    <div className='checkout-form'>
+                    <div className='checkout-form p-3 border'>
                         <label className='d-block text-start' htmlFor="name">Name:</label>
                         <input className='w-100' type="text" name="name" id="" />
                         <label className='d-block text-start' htmlFor="">Phone Number:</label>
@@ -38,9 +37,10 @@ const CheckOut = () => {
                         <input className='w-100' type="text" name="adress" id="" required />
                         <label className='d-block text-start' htmlFor="">Want to say something:</label>
                         <textarea className='w-100 text-area' name="" id="" cols="20" rows="10"></textarea>
-                        <div><button onClick={handleProceed} className='btn btn-success px-5'>Proceed CheckOut</button></div>
+
                     </div>
                 </div>
+                <div><button onClick={handleProceed} className='btn btn-success px-5'>Proceed CheckOut</button></div>
 
             </div>
             <ToastContainer />

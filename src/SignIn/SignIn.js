@@ -35,7 +35,7 @@ const SignIn = () => {
 
     let errorElement;
     if (error) {
-        errorElement = <p className='text-danger'>Error: {error.message}</p>
+        errorElement = <p className='text-danger text-center'>Error: {error.message}</p>
     }
 
     const handleSubmit = event => {
@@ -79,9 +79,11 @@ const SignIn = () => {
                         <label htmlFor="password">Password</label>
                         <input ref={passwordRef} type="password" placeholder='Enter your password' required />
                     </div>
+
                     <button className='btn btn-success w-100 py-2 mt-4 mb-1 fw-bold'>Sign In</button>
+                    {errorElement}
                 </form>
-                {errorElement}
+
 
                 <p className='ms-4 text-light'>New to Relaxia? <Link to='/signup' className='text-danger ms-2 pe-auto text-decoration-none' onClick={navigateSignUp}>Please Sign up.</Link></p>
 
