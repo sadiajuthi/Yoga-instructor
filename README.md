@@ -2,12 +2,16 @@
 # Live site: https://yoga-instractor.web.app/
 
 # About project:
+* make a create-react-app
 * used React Router
-* used React Bootstrap
 * added firebase hooks
 * connenced with firebase authentication
 * deployed by Firebase Hosting
 
+# Library I used in my projent:
+* React js
+* React Bootstrap
+* Bootstrap
 
 # Getting Started with Create React App
 

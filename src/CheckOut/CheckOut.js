@@ -23,7 +23,7 @@ const CheckOut = () => {
 
     return (
         <div className='container mt-5 text-center'>
-            <h3>Please check out to confirm your order!!!</h3>
+            <h3 className='text-success'>Please check out to confirm your order!!!</h3>
             <div className="row">
                 <div className="col-md-6">
                     <img className='w-100 mt-2' src={img} alt="" />
@@ -33,14 +33,15 @@ const CheckOut = () => {
                         <label className='d-block text-start' htmlFor="name">Name:</label>
                         <input className='w-100' type="text" name="name" id="" />
                         <label className='d-block text-start' htmlFor="">Phone Number:</label>
-                        <input className='w-100' type="number" name="" id="" />
+                        <input className='w-100' type="number" name="" id="" required />
                         <label className='d-block text-start' htmlFor="name">Adress:</label>
-                        <input className='w-100' type="text" name="name" id="" />
+                        <input className='w-100' type="text" name="adress" id="" required />
                         <label className='d-block text-start' htmlFor="">Want to say something:</label>
                         <textarea className='w-100 text-area' name="" id="" cols="20" rows="10"></textarea>
+                        <div><button onClick={handleProceed} className='btn btn-success px-5'>Proceed CheckOut</button></div>
                     </div>
                 </div>
-                <div><button onClick={handleProceed} className='btn btn-success px-5'>Proceed CheckOut</button></div>
+
             </div>
             <ToastContainer />
         </div>

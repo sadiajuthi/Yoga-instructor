@@ -5,7 +5,7 @@ const ExtraSection = () => {
     const [yogas, setYogas] = useYoga()
     console.log(yogas);
     return (
-        <div className='container'>
+        <div id='yoga' className='container'>
             <h1 className='text-center text-success m-4'>Yoga Not Just Fit Your Body! It Heals Your Mind.</h1>
             <div className='row'>
                 {yogas.map(yoga =>
